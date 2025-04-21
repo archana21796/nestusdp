@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+.headerlogo{
+    width:180px;
+    height:150px;
+    background-image: url("./nestlogo.jpeg");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-resize{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.buildingimg {
+    background-image: url('./buildingimg.jpg'); /* Correct path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 500px; /* Add height if no image is visible */
+    padding: 60px 0;
+    overflow: hidden;
+    height: 75vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .buildingimg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.377); /* Black overlay */
+    z-index: 1;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* 🧠 This is KEY to making your content appear above the overlay */
+  .buildingimg .container-fluid {
+    position: relative;
+    z-index: 2;
   }
-}
+  
+  .curriculamlogo{
+    background-image: url('./curricula\ logos.webp');
+    height:60px;
+  }
+  .bg-colour{
+    background-color: rgba(128, 128, 128, 0.247);
+  }
+  .studbg1{
+    background-image: url('./stud2.jpg');
+  }
+  .studbg2{
+background-image: url("./stud3.jpg");
+  }
+  .studbg3{
+    background-image: url("./stud1.jpg");
+  }
+  .studbg{
+    width:350px;
+    height: 250px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .bg-management{
+    background-color: rgba(177, 177, 177, 0.377);
+  }
+  .innest1{
+    background-image: url('./insidenest1.jpg');
+  }
+  .innest2{
+    background-image: url('./insidenest2.jpg');
+  }
+  .innest3{
+    background-image: url("./insidenest3.jpg");
+  }
+  .innest4{
+    background-image: url('./isidenest4.jpg');
+  }
+  .innest5{
+    background-image: url("./insidenest5.jpg");
+  }
+  .innest6{
+    background-image: url("./innestlogo5.jpeg");
+  }
+  .insidenest{
+    border-radius: 20px;
+    width:350px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bg-testimonials{
+    background-color: rgba(176, 224, 230, 0.795);
+  }
+  .test-avatar{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .ava1{
+    background-image: url("./ava1.webp");
+  }
+  .ava2{
+    background-image: url("./ava2.webp");
+  }
+  .bg-test{
+    background-color: rgba(206, 206, 206, 0.452);
+  }
+  .blink{
+    width:100px;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .blink1{
+    background-image: url('./bilingual2.svg');
+  }
+  .blink2{
+    background-image: url("./bilingual1.webp");
+  }
+  .blink3{
+    background-image: url("./blink3.webp");
+  }
+  .blink4{
+    background-image: url("./blink4.webp");
+  }
+  .bg-contact{
+    background-color: rgb(2, 2, 65);
+  }
