@@ -1,9 +1,36 @@
-import React from 'react'
-
+import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const Header = () => {
+  const [showIcon, setShowIcon] = useState(false) 
+
+  useEffect (() => {
+    const timer = setTimeout(() => {
+      setShowIcon(true)
+    },10000);
+    return () => clearTimeout(timer);
+  },[]);
+
+  useEffect(() => {
+    // Select all elements with 'data-bs-toggle="tooltip"'
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    
+    // Map through the list and initialize each tooltip
+    const tooltipList = [...tooltipTriggerList].map(
+      tooltipTriggerEl => new window.bootstrap.Tooltip(tooltipTriggerEl)
+    );
+    
+    // Clean up tooltips when component unmounts
+    return () => {
+      tooltipList.forEach(t => t.dispose());
+    };
+  }, []);
+  
+
   return (
-    <div>
+    <div className='position-relative'>
       <div className=' d-flex align-items-center justify-content-center'>
         <div className='headerlogo img-resize'></div>
       </div>
@@ -70,6 +97,19 @@ const Header = () => {
           <div className='curriculamlogo col-11 col-lg-3'></div>
         </div>
       </div>
+      {showIcon && (
+        <div className='contacticon'    data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Know us more"
+          onClick={() => {
+            const contactSection = document.getElementById('contact');
+            contactSection?.scrollIntoView({ behavior: 'smooth' });
+          }}>
+          <div className='icon-container'>
+            <FontAwesomeIcon icon={faPhone} size="xl" style={{ color: 'white' }} />
+          </div>
+      </div>
+      )}
 
     </div>
   )

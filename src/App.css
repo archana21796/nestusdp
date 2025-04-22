@@ -170,3 +170,24 @@ background-image: url("./stud3.jpg");
   .inbrd6{
     border-bottom: 5px solid rgb(110, 0, 253);
   }
+  .contacticon {
+    position: fixed;
+    bottom: 50px;       /* Distance from bottom */
+    right: 50px;        /* Distance from right */
+    z-index: 1000; 
+  }
+  .icon-container {
+    margin: auto;
+    background-color: orange;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    padding-left: 23px;
+    padding-top: 30%;
+    transition: transform 0.2s ease;
+  }
+  .icon-container:active {
+    transform: scale(0.75);
+  }

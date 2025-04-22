@@ -13,7 +13,7 @@ const Syllabus = () => {
                <p className='fs-5'>And even if your child joins mid-term, our Bridge Programme gives them the one-on-one support they need to quickly 
                 catch up with their peers and settle in more easily.</p>
           </div>
-          <div className='col-12 col-xl-8 pt-5 row align-items-center justify-content-center '>
+          <div className='col-12 col-xl-8 col-xxl-10 pt-5 row align-items-center justify-content-center '>
               <div className='col-md-8 col-lg-5 col-xl-4'>
                 <div className='studbg1 rounded-3 studbg'></div>
                 <div>
@@ -30,7 +30,7 @@ const Syllabus = () => {
                   <h3 className='my-2'>Equivalent to a US High School Experience</h3>
                      {/* <h6 className='pt-3 pb-3'>(ages 5-11)</h6> */}
                      <p>Study in a programme that mirrors a US high school experience, enabling direct
-                      applications to universities in the US and worldwide without TOEFL. Enjoy seamless
+                      applications to universities in the US and worldwide. Enjoy seamless
                       transitions into international higher education.</p>
                 </div>
               </div>
