@@ -15,7 +15,6 @@ function App() {
       <Syllabus />
       <Management />
       <Infrastructure />
-      <Testimonial />
       <Programme/>
       <Contact/>
     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Programme = () => {
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid bg-programme'>
         <div className='row text-center align-items-center justify-content-center'>
             <h3 className='pt-3 mt-3'>Dual Diploma Programme at The Nest School</h3>
             <p className='fs-5 pt-3 col-9'>The Nest School offers a unique dual diploma programme that combines the
@@ -11,8 +11,8 @@ const Programme = () => {
             students to achieve both the AS/A-Level diploma and the US High School Diploma
             within the same four-year timeframe, providing a comprehensive and globally
             recognized education.</p>
-            <div className='col-6 mt -5 row align-items-center justify-content-center'>
-                <div className='col-6 mt-3 mb-3'>
+            <div className='col-12 col-lg-6 mt -5 row align-items-center justify-content-center'>
+                <div className='col-12 col-md-6 mt-3 mb-3'>
                     <div className='col-6'>
                         <div className='blink blink1'></div>
                     </div>
@@ -22,7 +22,7 @@ const Programme = () => {
                         the Science and Math stream in Grade 11.</p>
                     </div>
                 </div>
-                <div className='col-6  mt-3 mb-3'>
+                <div className='col-12 col-md-6  mt-3 mb-3'>
                     <div className='col-6'>
                             <div className='blink blink2'></div>
                         </div>
@@ -32,7 +32,7 @@ const Programme = () => {
                             includes IGCSE and AS/A-Level exams to complete the Cambridge pathway.</p>
                         </div>
                 </div>
-                <div className='col-6 mt-3 mb-3'>
+                <div className='col-12 col-md-6 mt-3 mb-3'>
                     <div className='col-6'>
                         <div className='blink blink3'></div>
                     </div>
@@ -43,7 +43,7 @@ const Programme = () => {
                         overcome challenges.</p>
                     </div>
                 </div>
-                <div className='col-6 mt-3 mb-3'>
+                <div className='col-12 col-md-6 mt-3 mb-3'>
                     <div className='col-6'>
                         <div className='blink blink4'></div>
                     </div>

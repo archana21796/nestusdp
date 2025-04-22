@@ -1,15 +1,15 @@
 .headerlogo{
     width:180px;
     height:150px;
-    background-image: url("./nestlogo.jpeg");
+    background-image: url("./nest-website-logo.png");
 }
 .img-resize{
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 .buildingimg {
-    background-image: url('./buildingimg.jpg'); /* Correct path */
+    background-image: url('./headerbg.png'); /* Correct path */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -18,7 +18,13 @@
     min-height: 500px; /* Add height if no image is visible */
     padding: 60px 0;
     overflow: hidden;
-    height: 75vh;
+  }
+  @media screen and (min-width: 1900px){
+    .buildingimg {
+      height: 75vh;
+
+    }
+
   }
   
   .buildingimg::after {
@@ -32,14 +38,16 @@
     z-index: 1;
   }
   
-  /* 🧠 This is KEY to making your content appear above the overlay */
   .buildingimg .container-fluid {
     position: relative;
     z-index: 2;
   }
   
   .curriculamlogo{
-    background-image: url('./curricula\ logos.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./curriculamlogo.png');
     height:60px;
   }
   .bg-colour{
@@ -56,10 +64,15 @@ background-image: url("./stud3.jpg");
   }
   .studbg{
     width:350px;
-    height: 250px;
+    height: 230px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  @media screen and (max-width: 400px){
+    .studbg{
+      width:280px;
+    }
   }
   .bg-management{
     background-color: rgba(177, 177, 177, 0.377);
@@ -131,4 +144,29 @@ background-image: url("./stud3.jpg");
   }
   .bg-contact{
     background-color: rgb(2, 2, 65);
+  }
+  .bg-programme{
+    background-color: rgba(218, 216, 216, 0.438);
+  }
+  .styleimg{
+    width: 100%;
+    height: 400px !important;
+  }
+  .inbrd1{
+    border-bottom: 5px solid rgb(0, 162, 255);
+  }
+  .inbrd2{
+    border-bottom: 5px solid rgb(250, 43, 188);
+  }
+  .inbrd3{
+    border-bottom: 5px solid rgb(253, 228, 0);
+  }
+  .inbrd4{
+    border-bottom: 5px solid rgb(0, 245, 253);
+  }
+  .inbrd5{
+    border-bottom: 5px solid rgb(253, 0, 84);
+  }
+  .inbrd6{
+    border-bottom: 5px solid rgb(110, 0, 253);
   }
